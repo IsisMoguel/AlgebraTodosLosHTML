@@ -87,31 +87,31 @@
             </div>
 
             <div class="actividad">
-                <a href="./actividades/actividad06/1A_A06_Isis_Moguel.html">
+                <a href="/HTML_IsisMoguel/actividades/actividad06/1A_A06_Isis_Moguel.html">
                     Actividad 6 — Expresiones Algebraicas
                 </a>
             </div>
 
             <div class="actividad">
-                <a href="./actividades/actividad08/1A_A08_Isis_Moguel.html">
+                <a href="/HTML_IsisMoguel/actividades/actividad08/1A_A08_Isis_Moguel.html">
                     Actividad 8 — Calculadora de Operaciones
                 </a>
             </div>
 
             <div class="actividad">
-                <a href="./actividades/actividad10/1A_A10_Isis_Moguel.html">
+                <a href="/HTML_IsisMoguel/actividades/actividad10/1A_A10_Isis_Moguel.html">
                     Actividad 10 — Productos Notables
                 </a>
             </div>
 
             <div class="actividad">
-                <a href="./actividades/actividad12/1A_A12_Isis_Moguel (1).html">
+                <a href="/HTML_IsisMoguel/actividades/actividad12/1A_A12_Isis_Moguel (1).html">
                     Actividad 12 — Factorización
                 </a>
             </div>
 
             <div class="actividad">
-                <a href="./actividades/actividad14/1A_A14_Isis_Moguel (1).html">
+                <a href="/HTML_IsisMoguel/actividades/actividad14/1A_A14_Isis_Moguel (1).html">
                     Actividad 14 — Ecuaciones de Primer Grado
                 </a>
             </div>
