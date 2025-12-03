@@ -1,0 +1,188 @@
+
+/* ================= RESET BÁSICO ================= */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; }
+body {
+  font-family: "Times New Roman", Times, serif;
+  background: #f8f3f7; /* color neutro agradable */
+  color: #1e1b1f;
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 18px;
+}
+
+/* ================= CONTENEDOR PRINCIPAL ================= */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.9);
+  border-radius: 14px;
+  padding: 22px;
+  box-shadow: 0 6px 18px rgba(16,8,20,0.06);
+}
+
+/* ================= TIPOGRAFÍA / ENCABEZADOS ================= */
+h1, h2, h3, h4 {
+  color: #2c1024;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+h1 { font-size: 1.9rem; text-align: center; }
+h2 { font-size: 1.15rem; }
+h3 { font-size: 1rem; font-weight: 500; text-align: center; }
+
+/* ================= BLOQUES DE SECCIÓN ================= */
+.section, .form-section, .controls, .info-section {
+  background: transparent;
+  margin-bottom: 18px;
+  padding: 14px;
+  border-radius: 10px;
+}
+
+/* ================= INSTRUCCIONES / NOTAS ================= */
+.instructions {
+  background: #ffe6f4;
+  color: #57002a;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  font-size: 0.95rem;
+}
+.instructions ul { margin-left: 18px; margin-top: 8px; }
+.instructions li { margin-bottom: 6px; }
+
+/* ================= GRUPOS DE ENTRADA ================= */
+.input-group, .field-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.input-group label, .field-group label {
+  min-width: 110px;
+  font-weight: 600;
+  color: #3b0830;
+}
+.input-group > * { flex: 1 1 auto; }
+
+/* ================= CAMPOS (input, textarea, select) ================= */
+input[type="text"], input[type="number"], textarea, select, .input-field {
+  width: 100%;
+  padding: 10px 12px;
+  border: 2px solid rgba(150,0,80,0.12);
+  border-radius: 8px;
+  background: #fff;
+  font-family: inherit;
+  font-size: 0.98rem;
+  transition: box-shadow .15s ease, border-color .12s ease;
+}
+textarea { min-height: 100px; resize: vertical; }
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: rgba(255,0,154,0.6);
+  box-shadow: 0 4px 18px rgba(255,3,154,0.08);
+}
+input[readonly], textarea[readonly] { background:#f4e9ef; cursor: not-allowed; }
+
+/* ================= BOTONES (variantes) ================= */
+button, .btn, .convert-button, .calculate-button, .btn-primary, .clear-btn {
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: transform .08s ease, box-shadow .08s ease;
+}
+
+/* Primario */
+.btn-primary, .convert-button, .calculate-button {
+  background: linear-gradient(180deg,#ff008b,#d4006f);
+  color: #fff;
+  box-shadow: 0 6px 14px rgba(212,0,111,0.12);
+}
+.btn-primary:hover, .convert-button:hover, .calculate-button:hover { transform: translateY(-2px); }
+
+/* Secundario /-outline */
+button.secondary, .reset-button {
+  background: #fff;
+  color: #7a0a3b;
+  border: 2px solid rgba(79,0,45,0.14);
+}
+button.secondary:hover { background: #f6f0f4; }
+
+/* Acciones pequeñas (satisfactorio / mejorar) */
+.satisfactory-btn, .improve-btn, .add-pattern-btn {
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+.satisfactory-btn { background: #10b981; color: #fff; }
+.improve-btn { background: #ffb400; color: #1e1b1b; }
+.add-pattern-btn { background: #ff2eb6; color: #fff; }
+
+/* Botón limpiar centrado */
+.clear-btn { background:#ff009a; color:white; border-radius:8px; padding:10px 20px; }
+.clear-btn:hover { filter:brightness(.95); transform: translateY(-1px); }
+
+/* ================= TARJETAS / RESULTADOS ================= */
+.result, .result-content, .result-output, .info-card, .result-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 12px;
+  border: 1px solid rgba(150,0,80,0.06);
+  box-shadow: 0 6px 14px rgba(16,8,20,0.03);
+  margin-bottom: 8px;
+}
+.result { display:flex; align-items:center; gap:10px; min-height:48px; font-family: "Courier New", monospace; font-weight:600; }
+.result-content { min-height:50px; display:flex; align-items:center; }
+.result-output { font-family: "Courier New", monospace; min-height:48px; }
+
+/* Indicadores (success/warning/error) */
+.result-success { border-left: 6px solid #10b981; background: #f0fff6; }
+.result-warning { border-left: 6px solid #ffb400; background: #fff8ec; }
+.result-error   { border-left: 6px solid #ff3b6f; background: #fff0f3; }
+
+/* ================= LISTAS, HISTORIAL, TARJETAS PEQUEÑAS ================= */
+.history-item, .history-header, .history-content, .info-card .metric {
+  margin-bottom: 8px;
+}
+.history-item { padding: 8px; border-radius: 8px; background: #fff; border:1px solid rgba(0,0,0,0.04); }
+
+/* ================= ELEMENTOS ESPECÍFICOS (recta, presets) ================= */
+.preset-numbers { display:flex; flex-wrap:wrap; gap:8px; }
+.preset-btn { padding:6px 10px; border-radius:8px; background:#ffd1e8; border:1px solid rgba(0,0,0,0.05); cursor:pointer; }
+.preset-btn:hover { transform:translateY(-2px); }
+
+/* number-line / canvas containers */
+.number-line, #canvas-geometrico {
+  width: 100%;
+  border-radius: 8px;
+  background: linear-gradient(180deg,#fff,#fff8fb);
+  border: 1px solid rgba(0,0,0,0.06);
+  min-height: 100px;
+}
+
+/* ================= UTILIDADES ================= */
+.center { text-align:center; }
+.kv { display:flex; gap:8px; align-items:center; }
+.badge { padding:4px 8px; border-radius:8px; font-size:0.8rem; background:#fde8f8; color:#7a0141; }
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .input-group { flex-direction: column; align-items: stretch; }
+  .container { padding: 14px; }
+  h1 { font-size: 1.6rem; }
+}
+@media (max-width: 480px) {
+  body { padding: 12px; }
+  .container { padding: 12px; border-radius: 8px; }
+  h1 { font-size: 1.4rem; }
+}
+
+/* ================= PUNTOS DE EXTENSIÓN ================= */
+/* Si alguna página necesita un tema oscuro o color distinto, 
+   agrégale en el HTML <body class="theme-dark"> y crea reglas aquí */
+.theme-dark body, .theme-dark .container { background: #0f0210; color: #fff; }
